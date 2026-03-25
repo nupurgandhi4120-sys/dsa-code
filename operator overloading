@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+class Number{
+    public:
+    int value;
+     
+     Number(int v){
+         value = v;
+     } 
+     
+     bool operator ==(Number n){
+     return value == n.value;
+     }
+};
+
+int main()
+{
+   Number n1(10);
+   Number n2(10);
+   
+   if (n1==n2)
+    cout <<"equal";
+}
+// addition
+// multiplication
